@@ -1,0 +1,124 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    background-color: orangered;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left:8px;
+    width: 96.3%;
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar img {
+    width: 24px;
+    height: 24px;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.bimage{
+    background-image: url('./images/home-sec.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    margin-top: 50px;
+    
+     display: flex;
+      flex-wrap: wrap;
+       flex-direction: column;
+        justify-content: center;
+    align-items: center;
+}
+.search{
+height: 40px;
+width: 250px;
+border-radius: 20px;
+border: 0px solid red;
+}
+.search-logo{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+border: 0px solid red;
+background-color: orangered;
+color: white;
+
+}
+.search-logo:hover{
+    background-color: white;
+
+}
+.search-logo:hover .sl1{
+color: orangered;
+}
+.vegetarian{
+    padding: 10px;
+    border: 2px solid orangered;
+    margin: 80px;
+}
+.meals{
+    margin-left:85px ;
+    
+}
+.meal{
+    
+    font-size: 30px;
+}
+  .container {
+      
+      margin: 50px;
+      display: flex;
+      flex-wrap: wrap;       /* Allows wrapping to next row */
+      gap: 10px;       
+      justify-content: center;      /* Space between boxes */
+      
+    }
+
+    .box {
+      
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      box-sizing: border-box;
+        box-shadow: 10px 0px 10px 10px rgb(216, 216, 216);
+        margin-right: 2%;
+        margin-bottom: 2%;
+        width: 230px;
+        height: 270px;
+    }
+    .box p{
+        text-align: left;
+        font-size: 20px;
+        margin-top: 5px;
+        margin-left: 15px;
+        color: black;
+
+    }
+    .img{
+        width: 100%;
+        height: 70%;
+        margin: 0 auto;
+    }
+    .link{
+        text-decoration: none;
+        text-align: left;
+    }
