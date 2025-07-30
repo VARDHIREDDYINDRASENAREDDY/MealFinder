@@ -1,0 +1,124 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    background-color: orangered;
+    color: white;
+    height: 50px;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    left:8px;
+    width: 96.3%;
+    z-index: 1;
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar img {
+    width: 24px;
+    height: 24px;
+}
+
+.brand-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-toggle {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.bimage{
+    background-image: url('./images/home-sec.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    margin-top: 50px;
+    
+     display: flex;
+      flex-wrap: wrap;
+       flex-direction: column;
+        justify-content: center;
+    align-items: center;
+}
+.search{
+height: 40px;
+width: 250px;
+border-radius: 20px;
+border: 0px solid red;
+}
+.search-logo{
+height: 40px;
+width: 40px;
+border-radius: 50%;
+border: 0px solid red;
+background-color: orangered;
+color: white;
+
+}
+.search-logo:hover{
+    background-color: white;
+
+}
+.search-logo:hover .sl1{
+color: orangered;
+}
+.meals{
+    margin-left:85px ;
+    margin-top: 60px;
+    
+}
+.meal{
+    
+    font-size: 1.6em;
+}
+.container {
+      
+      margin: 80px;
+      
+      display: flex;
+      flex-wrap: wrap;       /* Allows wrapping to next row */
+      gap: 10px;       
+            /* Space between boxes */
+      
+    }
+
+    .box {
+      
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      box-sizing: border-box;
+        box-shadow: 10px 0px 10px 10px rgb(237, 237, 237);
+        margin-right: 2%;
+        margin-bottom: 2%;
+        width: 230px;
+        height: 200px;
+        position: relative;
+    }
+    .img{
+        height: 190px;
+        width: 220px;
+    }
+    .img:hover{
+    transform:scale(0.8) ;
+}
+.cardname{
+    position: absolute;
+    
+    color:white;
+    border:solid orangered;
+    background-color: orangered;
+    border-radius: 5px;
+    z-index: 1;
+    top: 10px;
+    right:10px;
+
+}
