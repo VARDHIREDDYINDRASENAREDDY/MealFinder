@@ -8,9 +8,10 @@
     padding: 0 20px;
     position: fixed;
     top: 0;
-    left:8px;
-    width: 96.3%;
+    left:0px;
+    width: 98%;
     z-index: 1;
+    
 }
 
 .navbar-left {
@@ -39,9 +40,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 600px;
     margin-top: 50px;
-    
+    width: 101.08%;
+    margin-left: -8px;
      display: flex;
       flex-wrap: wrap;
        flex-direction: column;
@@ -71,7 +73,7 @@ color: white;
 color: orangered;
 }
 .meals{
-    margin-left:85px ;
+    margin-left:90px ;
     margin-top: 60px;
     
 }
@@ -81,7 +83,8 @@ color: orangered;
 }
 .container {
       
-      margin: 80px;
+      margin-top: 80px;
+      margin-left: 90px;
       
       display: flex;
       flex-wrap: wrap;       /* Allows wrapping to next row */

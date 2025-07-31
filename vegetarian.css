@@ -8,8 +8,8 @@
     padding: 0 20px;
     position: fixed;
     top: 0;
-    left:8px;
-    width: 96.3%;
+    left:0px;
+    width: 98%;
     z-index: 1;
 }
 
@@ -39,9 +39,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 400px;
+    height: 600px;
     margin-top: 50px;
-    
+    margin-left: -8px;
+    width: 101.08%;
      display: flex;
       flex-wrap: wrap;
        flex-direction: column;
@@ -73,10 +74,10 @@ color: orangered;
 .vegetarian{
     padding: 10px;
     border: 2px solid orangered;
-    margin: 80px;
+    margin: 90px;
 }
 .meals{
-    margin-left:85px ;
+    margin-left:90px ;
     
 }
 .meal{
@@ -90,7 +91,7 @@ color: orangered;
       flex-wrap: wrap;       /* Allows wrapping to next row */
       gap: 10px;       
       justify-content: center;      /* Space between boxes */
-      
+      margin-left: 60px;
     }
 
     .box {
