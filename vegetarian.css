@@ -1,3 +1,12 @@
+*{
+      box-sizing: border-box;
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
 .navbar {
     display: flex;
     justify-content: space-between;  
@@ -9,8 +18,9 @@
     position: fixed;
     top: 0;
     left:0px;
-    width: 98%;
+    width: 100%;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .navbar-left {
@@ -34,92 +44,157 @@
     cursor: pointer;
 }
 
-.bimage{
-    background-image: url('./images/home-sec.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 600px;
-    margin-top: 50px;
-    margin-left: -8px;
-    width: 101.08%;
-     display: flex;
-      flex-wrap: wrap;
-       flex-direction: column;
-        justify-content: center;
-    align-items: center;
-}
-.search{
-height: 40px;
-width: 250px;
-border-radius: 20px;
-border: 0px solid red;
-}
-.search-logo{
-height: 40px;
-width: 40px;
-border-radius: 50%;
-border: 0px solid red;
-background-color: orangered;
-color: white;
+.bimage {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/home-sec.jpg');
+      
+      
+      /* opacity: 0.8; */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 600px;
+      margin-top: 50px;
+      width: 100.55%;
+      margin-left: -8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 15px;
+      text-align: center;
+    }
 
+.search{
+    height: 40px;
+    width: 250px;
+    border-radius: 20px;
+    border: none;
+    padding-left: 30px;
+    
 }
+
+.search-logo{
+    height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      border: 1px solid white;
+      background-color: orangered;
+      color: white;
+      /* margin-left: 10px; */
+}
+
 .search-logo:hover{
     background-color: white;
+}
 
-}
 .search-logo:hover .sl1{
-color: orangered;
+    color: orangered;
 }
+
 .vegetarian{
     padding: 10px;
     border: 2px solid orangered;
-    margin: 90px;
+    margin: 90px 5%;
+    box-sizing: border-box;
 }
+
 .meals{
-    margin-left:90px ;
-    
+    margin-left: 5%;
 }
+
 .meal{
-    
     font-size: 30px;
 }
-  .container {
-      
-      margin: 50px;
-      display: flex;
-      flex-wrap: wrap;       /* Allows wrapping to next row */
-      gap: 10px;       
-      justify-content: center;      /* Space between boxes */
-      margin-left: 60px;
+
+.container {
+    margin: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.box {
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    box-sizing: border-box;
+    
+    width: 240px;
+    height: 250px;
+    
+    
+}
+
+.box p{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-left: 15px;
+    color: black;
+}
+
+.img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.link{
+    text-decoration: none;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .bimage {
+        height: auto;
+        padding: 40px 15px;
+        width: 101.5%;
+    }
+
+    .search {
+        width: 80%;
+    }
+
+    .search-logo {
+        margin-top: 10px;
+    }
+
+    .vegetarian, .meals {
+        margin: 40px 10px;
+    }
+
+    .meal {
+        font-size: 24px;
     }
 
     .box {
-      
-      color: white;
-      text-align: center;
-      border-radius: 6px;
-      box-sizing: border-box;
-        box-shadow: 10px 0px 10px 10px rgb(216, 216, 216);
-        margin-right: 2%;
-        margin-bottom: 2%;
-        width: 230px;
-        height: 270px;
+        width: 45%;
+        margin-bottom: 20px;
     }
-    .box p{
-        text-align: left;
-        font-size: 20px;
-        margin-top: 5px;
-        margin-left: 15px;
-        color: black;
+}
 
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
     }
-    .img{
+
+    .brand-title {
+        font-size: 18px;
+    }
+    .bimage {
+        width: 101.8%;
+        padding: 20px 10px;
+    }
+
+    .search {
+        width: 70%;
+    }
+
+    .box {
         width: 100%;
-        height: 70%;
-        margin: 0 auto;
     }
-    .link{
-        text-decoration: none;
-        text-align: left;
-    }
+}
